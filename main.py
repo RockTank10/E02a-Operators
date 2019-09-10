@@ -14,6 +14,7 @@ def sub(a1,a2):
     Subtracts a2 from a1
     '''
     toReturn = 0
+    toReturn = a1 - a2
     # add your code here
     return toReturn
 
@@ -22,6 +23,7 @@ def mult(a1,a2):
     Multiplies a1 by a2
     '''
     toReturn = 0
+    toReturn = a1 * a2
     # add your code here
     return toReturn
 
@@ -30,6 +32,7 @@ def div(a1,a2):
     Divides a1 by a2
     '''
     toReturn = 0
+    toReturn = a1 / a2
     # add your code here
     return toReturn
 
@@ -38,6 +41,7 @@ def floorDiv(a1,a2):
     Divides a1 by a2 with remainder rounded down
     '''
     toReturn = 0
+    toReturn = a1 // a2
     # add your code here
     return toReturn
 
@@ -47,6 +51,8 @@ def mod(a1,a2):
     e.g., mod(5,3) = 2, mod(15,5) = 0, mod(15,4) = 3
     '''
     toReturn = 0
+    toReturn = a1 / a2
+    toReturn = a1
     # add your code here
     return toReturn
 
@@ -55,6 +61,7 @@ def exp(a1,a2):
     Returns the a1 to the a2 power (exponent)
     '''
     toReturn = 0
+    toReturn = a1^a2
     # add your code here
     return toReturn
 
@@ -64,6 +71,8 @@ def orderOperations(a1,a2,a3):
     i.e., changes normal order or operations 
     '''
     toReturn = 0
+    toReturn = a1 + a2
+    toReturn = toReturn * a3
     # add your code here
     return toReturn
 
@@ -72,6 +81,7 @@ def whichType(t):
     Returns the python data type of t
     '''
     toReturn = ''
+    toReturn = t
     # add your code here
     return toReturn
 
@@ -80,6 +90,7 @@ def convertInt(i):
     Converts i to an integer
     '''
     toReturn = 0
+    toReturn = int(i)
     # add your code here
     return toReturn
 
@@ -88,6 +99,7 @@ def convertFloat(f):
     Converts f to a float
     '''
     toReturn = 0.0
+    toReturn = float(f)
     # add your code here
     return toReturn
 
@@ -96,6 +108,7 @@ def convertStr(s):
     Converts s to a string
     '''
     toReturn = ''
+    toReturn = str(s)
     # add your code here
     return toReturn
 
@@ -103,7 +116,7 @@ def concat(s1,s2):
     '''
     Concatenates (string) s2 to the end of s1
     '''
-    toReturn = ''
+    toReturn = s1+s2
     # add your code here
     return toReturn
 
@@ -111,7 +124,7 @@ def whichChar(s,a):
     '''
     Returns the character at position a of string s
     '''
-    toReturn = ''
+    toReturn = s(a)
     # add your code here
     return toReturn
 
@@ -119,7 +132,7 @@ def substr(s,a1,a2):
     '''
     Returns a substring of s (from position a1 to a2)
     '''
-    toReturn = ''
+    toReturn = s[a1:a2]
     # add your code here
     return toReturn
 
@@ -127,7 +140,7 @@ def reverseStr(s):
     '''
     Returns a string which is a reversed version of s
     '''
-    toReturn = ''
+    toReturn = reversed(s)
     # add your code here
     return toReturn
 
@@ -137,7 +150,7 @@ def isIn(l,e):
     '''
     toReturn = ''
     # add your code here
-    return toReturn
+    return e in l
 
 def randomElement(l):
     '''
@@ -153,13 +166,14 @@ def randomNumber():
     '''
     toReturn = 0
     # add your code here
-    return toReturn
+    return print(random.randint(1000,9999)
 
-def reverseList(l):
+
+def reverseList(l):#no idea the issue here
     '''
     Returns a list which is a mirror of l (each element is present in reverse order from l)
     '''
-    toReturn = []
+    toReturn = reversed(l)
     # add your code here
     return toReturn
 
@@ -169,13 +183,18 @@ def shuffleList(l):
     '''
     toReturn = []
     # add your code here
-    return toReturn
+    return print(random.shuffle(l))
 
 def listUntil(a):
     '''
     Returns a list contains numbers from 0 to a
     '''
+    i=0
     toReturn = []
+    while i != a
+        toReturn[i]
+        i=i+1
+
     # add your code here
     return toReturn
 
